@@ -1,0 +1,28 @@
+{
+  "components": [
+    {
+      "label": "Choose Payment Method",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0vyqlq5",
+        "columns": null
+      },
+      "id": "Field_0yvbwnf",
+      "key": "card",
+      "description": "How do you want to pay?",
+      "validate": {
+        "required": true,
+        "pattern": "Credit|New"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "selectPaymentMethod",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

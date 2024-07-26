@@ -1,0 +1,28 @@
+{
+  "components": [
+    {
+      "label": "Choose Shipping Service",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0vyqlq5",
+        "columns": null
+      },
+      "id": "Field_0yvbwnf",
+      "key": "service",
+      "description": "What Shipping Service Do You Prefer?",
+      "validate": {
+        "required": true,
+        "pattern": "Taxify|Uber"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "getShippingService",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}
