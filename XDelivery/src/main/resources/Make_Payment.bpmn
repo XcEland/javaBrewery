@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0fem2mq" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.25.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:collaboration id="Collaboration_0rs5qua">
+    <bpmn:participant id="Participant_157voqu" name="Payment" processRef="Process_1k4a2ob" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1k4a2ob" name="Make Payment" isExecutable="true" camunda:historyTimeToLive="78">
+    <bpmn:startEvent id="StartEvent_1" name="start">
+      <bpmn:outgoing>Flow_1kjm3ra</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_1985ss0" name="Make Payment" camunda:delegateExpression="#{makePayment}">
+      <bpmn:incoming>Flow_1kjm3ra</bpmn:incoming>
+      <bpmn:outgoing>Flow_10j6i37</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_16go7o1">
+      <bpmn:incoming>Flow_021dc46</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Activity_0sww47k" name="Success">
+      <bpmn:incoming>Flow_10j6i37</bpmn:incoming>
+      <bpmn:outgoing>Flow_021dc46</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_1quhcp2" name="Insufficient Balance">
+      <bpmn:incoming>Flow_0lzd4n2</bpmn:incoming>
+      <bpmn:outgoing>Flow_1pil9l6</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Event_1kotajr">
+      <bpmn:incoming>Flow_1pil9l6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:boundaryEvent id="Event_1mv0agu" attachedToRef="Activity_1985ss0">
+      <bpmn:outgoing>Flow_0lzd4n2</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="ErrorEventDefinition_1d1ndyu" errorRef="Error_137kcvq" camunda:errorMessageVariable="Error_Balance" />
+    </bpmn:boundaryEvent>
+    <bpmn:sequenceFlow id="Flow_1kjm3ra" sourceRef="StartEvent_1" targetRef="Activity_1985ss0" />
+    <bpmn:sequenceFlow id="Flow_10j6i37" sourceRef="Activity_1985ss0" targetRef="Activity_0sww47k" />
+    <bpmn:sequenceFlow id="Flow_021dc46" sourceRef="Activity_0sww47k" targetRef="Event_16go7o1" />
+    <bpmn:sequenceFlow id="Flow_0lzd4n2" sourceRef="Event_1mv0agu" targetRef="Activity_1quhcp2" />
+    <bpmn:sequenceFlow id="Flow_1pil9l6" sourceRef="Activity_1quhcp2" targetRef="Event_1kotajr" />
+  </bpmn:process>
+  <bpmn:error id="Error_137kcvq" name="ERROR_INSUFFICIENT_BALANCE" errorCode="ERROR_INSUFFICIENT_BALANCE" camunda:errorMessage="Insufficient balance to make payment" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0rs5qua">
+      <bpmndi:BPMNShape id="Participant_157voqu_di" bpmnElement="Participant_157voqu" isHorizontal="true">
+        <dc:Bounds x="129" y="77" width="841" height="250" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="249" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="186" y="292" width="22" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1dctd1i_di" bpmnElement="Activity_1985ss0">
+        <dc:Bounds x="260" y="227" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_16go7o1_di" bpmnElement="Event_16go7o1">
+        <dc:Bounds x="552" y="249" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0oycejy_di" bpmnElement="Activity_0sww47k">
+        <dc:Bounds x="420" y="227" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_00kxheo_di" bpmnElement="Activity_1quhcp2">
+        <dc:Bounds x="410" y="100" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1kotajr_di" bpmnElement="Event_1kotajr">
+        <dc:Bounds x="562" y="122" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0gojdi6_di" bpmnElement="Event_1mv0agu">
+        <dc:Bounds x="322" y="209" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1kjm3ra_di" bpmnElement="Flow_1kjm3ra">
+        <di:waypoint x="215" y="267" />
+        <di:waypoint x="260" y="267" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10j6i37_di" bpmnElement="Flow_10j6i37">
+        <di:waypoint x="360" y="267" />
+        <di:waypoint x="420" y="267" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_021dc46_di" bpmnElement="Flow_021dc46">
+        <di:waypoint x="520" y="267" />
+        <di:waypoint x="552" y="267" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0lzd4n2_di" bpmnElement="Flow_0lzd4n2">
+        <di:waypoint x="340" y="209" />
+        <di:waypoint x="340" y="140" />
+        <di:waypoint x="410" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1pil9l6_di" bpmnElement="Flow_1pil9l6">
+        <di:waypoint x="510" y="140" />
+        <di:waypoint x="562" y="140" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

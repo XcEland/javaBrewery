@@ -12,7 +12,10 @@
       "description": "Enter your Card Holder Name",
       "validate": {
         "required": false
-      }
+      },
+      "defaultValue": "Mark Doe",
+      "disabled": false,
+      "readonly": false
     },
     {
       "label": "Card Number",
@@ -23,7 +26,8 @@
       },
       "id": "Field_0izln5k",
       "key": "cardNumber",
-      "description": "Huge Number on your Card"
+      "description": "Huge Number on your Card",
+      "defaultValue": "1234567890"
     },
     {
       "label": "Expiry Date",
@@ -34,7 +38,8 @@
       },
       "id": "Field_1tbvass",
       "key": "expiryDate",
-      "description": "Enter Date of Expiry"
+      "description": "Enter Date of Expiry",
+      "defaultValue": "12/25"
     },
     {
       "label": "CVV",
@@ -45,11 +50,12 @@
       },
       "id": "Field_1fxntqp",
       "key": "cvv",
-      "description": "Enter a 3 digit CVV value"
+      "description": "Enter a 3 digit CVV value",
+      "defaultValue": "123"
     }
   ],
   "type": "default",
-  "id": "AddNewCard",
+  "id": "ExistingCard",
   "exporter": {
     "name": "Camunda Modeler",
     "version": "5.25.0"

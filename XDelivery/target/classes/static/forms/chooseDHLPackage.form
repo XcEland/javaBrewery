@@ -46,9 +46,7 @@
       },
       "id": "Field_16if7rj",
       "key": "location",
-      "validate": {
-        "required": true
-      },
+      "validate": {},
       "defaultValue": "Beitbridge, Zimbabwe"
     },
     {
@@ -72,8 +70,8 @@
           "value": "$80"
         },
         {
-          "label": "Instant $95",
-          "value": "$95"
+          "label": "Instant $110",
+          "value": "$110"
         }
       ],
       "label": "Select Delivery Service",
@@ -90,7 +88,7 @@
     }
   ],
   "type": "default",
-  "id": "chooseUberPackage",
+  "id": "chooseDHLPackage",
   "exporter": {
     "name": "Camunda Modeler",
     "version": "5.25.0"

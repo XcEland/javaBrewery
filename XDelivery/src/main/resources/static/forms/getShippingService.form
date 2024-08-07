@@ -1,18 +1,40 @@
 {
   "components": [
     {
+      "values": [
+        {
+          "label": "Uber",
+          "value": "Uber"
+        },
+        {
+          "label": "Taxify",
+          "value": "Taxify"
+        },
+        {
+          "label": "Swift",
+          "value": "Swift"
+        },
+        {
+          "label": "DHL",
+          "value": "DHL"
+        },
+        {
+          "label": "Markiti ",
+          "value": "Markiti"
+        }
+      ],
       "label": "Choose Shipping Service",
-      "type": "textfield",
+      "type": "select",
       "layout": {
-        "row": "Row_0vyqlq5",
+        "row": "Row_0i3djbi",
         "columns": null
       },
-      "id": "Field_0yvbwnf",
+      "id": "Field_16m74vt",
       "key": "service",
       "description": "What Shipping Service Do You Prefer?",
+      "defaultValue": "Markiti",
       "validate": {
-        "required": true,
-        "pattern": "Taxify|Uber"
+        "required": true
       }
     }
   ],
