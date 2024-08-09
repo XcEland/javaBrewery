@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0shb9mk" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.25.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:process id="Process_17pqmxc" name="Task Listeners" isExecutable="true" camunda:historyTimeToLive="78">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0ql45wh</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_0ql45wh" sourceRef="StartEvent_1" targetRef="Activity_03mdagi" />
+    <bpmn:endEvent id="Event_1n0l07h">
+      <bpmn:incoming>Flow_12jivec</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_12jivec" sourceRef="Activity_03mdagi" targetRef="Event_1n0l07h" />
+    <bpmn:userTask id="Activity_03mdagi" name="Task Listener">
+      <bpmn:extensionElements>
+        <camunda:taskListener class="com.x.workflow.taskListener.CompleteTaskListener" event="complete" id="complete" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0ql45wh</bpmn:incoming>
+      <bpmn:outgoing>Flow_12jivec</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_17pqmxc">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1n0l07h_di" bpmnElement="Event_1n0l07h">
+        <dc:Bounds x="432" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0pk8dbc_di" bpmnElement="Activity_03mdagi">
+        <dc:Bounds x="270" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0ql45wh_di" bpmnElement="Flow_0ql45wh">
+        <di:waypoint x="215" y="117" />
+        <di:waypoint x="270" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12jivec_di" bpmnElement="Flow_12jivec">
+        <di:waypoint x="370" y="117" />
+        <di:waypoint x="432" y="117" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

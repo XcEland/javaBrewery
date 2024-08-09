@@ -22,9 +22,8 @@
         "columns": null
       },
       "id": "Field_0izln5k",
-      "key": "textfield_2ixf8p",
-      "description": "Huge Number on your Card",
-      "defaultValue": "cardNumber"
+      "key": "cardNumber",
+      "description": "Huge Number on your Card"
     },
     {
       "label": "Expiry Date",
@@ -34,9 +33,8 @@
         "columns": null
       },
       "id": "Field_1tbvass",
-      "key": "textfield_dhrxw",
-      "description": "Enter Date of Expiry",
-      "defaultValue": "expiryDate"
+      "key": "expiryDate",
+      "description": "Enter Date of Expiry"
     },
     {
       "label": "CVV",
@@ -46,28 +44,8 @@
         "columns": null
       },
       "id": "Field_1fxntqp",
-      "key": "textfield_l1vq59",
-      "description": "Enter a 3 digit CVV value",
-      "defaultValue": "cvv"
-    },
-    {
-      "values": [
-        {
-          "label": "True",
-          "value": "True"
-        }
-      ],
-      "label": "isValid",
-      "type": "radio",
-      "layout": {
-        "row": "Row_1o91i5n",
-        "columns": null
-      },
-      "id": "Field_0t3q24h",
-      "key": "cardValid",
-      "validate": {
-        "required": true
-      }
+      "key": "cvv",
+      "description": "Enter a 3 digit CVV value"
     }
   ],
   "type": "default",

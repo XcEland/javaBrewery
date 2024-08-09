@@ -1,18 +1,31 @@
 {
   "components": [
     {
+      "values": [
+        {
+          "label": "1234******7890",
+          "value": "1234******7890"
+        },
+        {
+          "label": "PayPal",
+          "value": "PayPal"
+        },
+        {
+          "label": "Add New Card",
+          "value": "New"
+        }
+      ],
       "label": "Choose Payment Method",
-      "type": "textfield",
+      "type": "select",
       "layout": {
-        "row": "Row_0vyqlq5",
+        "row": "Row_0bbl64x",
         "columns": null
       },
-      "id": "Field_0yvbwnf",
+      "id": "Field_0jcs2y4",
       "key": "card",
-      "description": "How do you want to pay?",
+      "description": "Choose Card to Pay With",
       "validate": {
-        "required": true,
-        "pattern": "Credit|New"
+        "required": true
       }
     }
   ],
