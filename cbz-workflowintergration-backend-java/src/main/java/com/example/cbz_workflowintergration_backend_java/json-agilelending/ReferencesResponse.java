@@ -1,0 +1,19 @@
+public class ReferencesResponse{
+    public ServiceHeader serviceHeader;
+    public String accountNumber;
+    public String contractNumber;
+    public MonthlyRevenues monthlyRevenues;
+    public double additionalAmount;
+    public double expectedTerm;
+    public double principalDebtCreditLimit;
+    public String dateSignedBy;
+    public double interestAmount;
+    public double facilityAmount;
+    public double creditFactor;
+    public double holdbackPercentage;
+    public double minimumRevenuePeriod;
+    public double balanceBroughtForward;
+    public String collectionOption;
+    public Accounts accounts;
+    public Metadata @metadata;
+}

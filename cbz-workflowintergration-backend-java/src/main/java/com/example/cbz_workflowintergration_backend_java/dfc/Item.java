@@ -1,0 +1,23 @@
+public class Item{
+    public String itemId;
+    public ProdType prodType;
+    public ProdName prodName;
+    public double requestedLimit;
+    public double offerLimitMin;
+    public double offerLimitMax;
+    public double selectedLimit;
+    public String accNumber;
+    public double interestRate;
+    public String term;
+    public String applicationStatus;
+    public String rateType;
+    public CardLinking cardLinking;
+    public String expiryDate;
+    public Dates dates;
+    public Metadata @metadata;
+    public String apptType;
+    public String date;
+    public CompletedBy completedBy;
+    public SendSMSNotificationReq sendSMSNotificationReq;
+    public SendSMSNotificationRes sendSMSNotificationRes;
+}

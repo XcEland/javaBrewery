@@ -1,0 +1,20 @@
+public class ApplicationDetails{
+    public String customerFirstName;
+    public String customerSurname;
+    public String entityName;
+    public String customerSalutation;
+    public String applicationNumber;
+    public String customerBPID;
+    public OtherApplicationDetails otherApplicationDetails;
+    public Metadata @metadata;
+    public Date appDate;
+    public String appStatus;
+    public Offer offer;
+    public String custType;
+    public String debtReview;
+    public String kycStatus;
+    public AccountExecutiveDetails accountExecutiveDetails;
+    public RelatedPartiesSummary relatedPartiesSummary;
+    public String bri;
+    public CurrentApplicationInformation currentApplicationInformation;
+}

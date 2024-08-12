@@ -1,0 +1,22 @@
+public class Logger{
+    public String initializedLogger;
+    public String applicationMode;
+    public String logGuid;
+    public String bpmFeatureTeam;
+    public String serviceType;
+    public String callerAcronym;
+    public String upn;
+    public String empNo;
+    public String consumerBpmApplication;
+    public String callerProcessInstanceId;
+    public Object location;
+    public String message;
+    public String payload;
+    public String response;
+    public HeaderDetailsJSON headerDetailsJSON;
+    public String userId;
+    public String businessFunction;
+    public String startTime;
+    public String endTime;
+    public Metadata @metadata;
+}
