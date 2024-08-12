@@ -1,0 +1,101 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "5 * Mac Book PC",
+          "value": "5"
+        },
+        {
+          "label": "2 * Mechanical Keyboard",
+          "value": "2"
+        },
+        {
+          "label": "4 * PC Monitor",
+          "value": "4"
+        }
+      ],
+      "label": "Your Packages",
+      "type": "checklist",
+      "layout": {
+        "row": "Row_1oeav50",
+        "columns": null
+      },
+      "id": "Field_02fh1cn",
+      "key": "clientPackages",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Fragile",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1781m5t",
+        "columns": null
+      },
+      "id": "Field_1xevwt3",
+      "key": "isFragile"
+    },
+    {
+      "label": "Delivery Location",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1gnun0v",
+        "columns": null
+      },
+      "id": "Field_16if7rj",
+      "key": "location",
+      "validate": {
+        "required": true
+      },
+      "defaultValue": "Beitbridge, Zimbabwe"
+    },
+    {
+      "label": "Pickup Details",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1j0t0ws",
+        "columns": null
+      },
+      "id": "Field_0t31pw1",
+      "key": "pickupDetails"
+    },
+    {
+      "values": [
+        {
+          "label": "Normal $30",
+          "value": "$30"
+        },
+        {
+          "label": "Express $80",
+          "value": "$80"
+        },
+        {
+          "label": "Instant $90",
+          "value": "$90"
+        }
+      ],
+      "label": "Select Delivery Service",
+      "type": "select",
+      "layout": {
+        "row": "Row_0tvz30e",
+        "columns": null
+      },
+      "id": "Field_0tcm2sj",
+      "key": "package",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "chooseSwiftPackage",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

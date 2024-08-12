@@ -1,0 +1,86 @@
+{
+  "components": [
+    {
+      "label": "Package Details",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1gnun0v",
+        "columns": null
+      },
+      "id": "Field_0t31pw1",
+      "key": "packageDetails",
+      "defaultValue": "5 * Mac Book PC\n2 * Mechanical Keyboard\n4 * PC Monitor",
+      "readonly": true
+    },
+    {
+      "label": "Delivery Location",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1tphh4f",
+        "columns": null
+      },
+      "id": "Field_16if7rj",
+      "key": "deliveryLocation",
+      "validate": {},
+      "defaultValue": "768 Mbedzi, Beitbridge, Zimbabwe",
+      "readonly": true
+    },
+    {
+      "label": "Pickup Location",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0ce0tgo",
+        "columns": null
+      },
+      "id": "Field_0j0jzbl",
+      "key": "textfield_80g1re",
+      "disabled": true,
+      "defaultValue": "BeitBridge Warehouse"
+    },
+    {
+      "label": "Distance",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0ce0tgo",
+        "columns": null
+      },
+      "id": "Field_10aimct",
+      "key": "distance",
+      "defaultValue": "8.78",
+      "readonly": true,
+      "description": "Kilometres"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "label": "Accept Job",
+      "type": "select",
+      "layout": {
+        "row": "Row_15ywqg2",
+        "columns": null
+      },
+      "id": "Field_1d6vzwf",
+      "key": "acceptJob",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "jobPackage",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

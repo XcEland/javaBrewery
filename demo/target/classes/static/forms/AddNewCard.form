@@ -1,0 +1,60 @@
+{
+  "components": [
+    {
+      "label": "Card Holder Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0vyqlq5",
+        "columns": null
+      },
+      "id": "Field_0yvbwnf",
+      "key": "cardHolderName",
+      "description": "Enter your Card Holder Name",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Card Number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0ddrrrp",
+        "columns": null
+      },
+      "id": "Field_0izln5k",
+      "key": "cardNumber",
+      "description": "Huge Number on your Card"
+    },
+    {
+      "label": "Expiry Date",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_15utdlr",
+        "columns": null
+      },
+      "id": "Field_1tbvass",
+      "key": "expiryDate",
+      "description": "Enter Date of Expiry"
+    },
+    {
+      "label": "CVV",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1o91i5n",
+        "columns": null
+      },
+      "id": "Field_1fxntqp",
+      "key": "cvv",
+      "description": "Enter a 3 digit CVV value"
+    }
+  ],
+  "type": "default",
+  "id": "AddNewCard",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

@@ -1,0 +1,240 @@
+{
+    "loggerMessage": "Successful",
+    "request": "{\"headerDetails\":{\"requestTimeStamp\":\"2024-02-07\",\"correlationId\":\"d82dd24a-c039-45a8-9520-35689f5068f5\",\"channelId\":\"SALESFORCE STAFF-ASSISTED\"},\"applicationDetails\":{\"applicationId\":\"a6hFg000000GKZ3IAO\"},\"businessDetails\":{\"industryClassification\":\"01222\",\"cellphoneNumber\":\"\",\"bpguid\":\"11910960-dbc0-1eef-93e3-648328047134\",\"beeCode\":null,\"taxDetails\":[{\"taxNumber\":\"\",\"taxCountry\":\"\",\"provisionalTaxPayerInd\":\"\",\"taxType\":\"\"}],\"nature\":\"999\",\"bpid\":\"0536065752\",\"sourceOfFunds\":[{\"sourceFundAmount\":\"1000000.0\",\"sourceFundType\":\"0026\",\"currency\":\"ZAR\"}],\"type\":\"PRIVATE COMPANY\",\"emailAddress\":\"\",\"postalAddress\":{\"province\":\"\",\"city\":\"\",\"countyDistrict\":\"\",\"countryCode\":\"   \",\"postalCode\":\"1733\",\"addressLine1\":\"168 OUKLIPWEG\",\"addressLine2\":\"HELDERKRUIN\",\"addressLine3\":\" \",\"addressLine4\":\" \"},\"registrationNumber\":\"2006\\/019331\\/07\",\"finYearEnd\":\"12\",\"name\":\"PRIME RESOURCES PROPERTY\",\"registrationDate\":\"2006-06-21\",\"physicalAddress\":{\"province\":\"\",\"city\":\"\",\"countyDistrict\":\"\",\"countryCode\":\"   \",\"postalCode\":\"1733\",\"addressLine1\":\"168 OUKLIPWEG\",\"addressLine2\":\"HELDERKRUIN\",\"addressLine3\":\" \",\"addressLine4\":\" \"},\"turnover\":\"1000000\",\"entityClassification\":null,\"startDate\":\"2006-06-21\",\"preferredBranch\":\"0016433\",\"finEffectiveDate\":\"2024-12-31\",\"status\":\"IN BUSINESS\"},\"user\":{\"userId\":\"A234399\"}}",
+    "endpoint": "",
+    "stepName": "Wait for Onboard Customer",
+    "response": "",
+    "logger": {
+        "initializedLogger": "",
+        "applicationMode": "",
+        "logGuid": "",
+        "bpmFeatureTeam": "",
+        "serviceType": "",
+        "callerHostname": "",
+        "callerAcronym": "",
+        "upn": "",
+        "digitalId": "",
+        "empNo": "",
+        "consumerBpmApplication": "",
+        "orchestrationAppName": "",
+        "callerProcessInstanceId": "",
+        "location": "",
+        "message": "",
+        "endpoint": "",
+        "bpelName": "",
+        "payload": "",
+        "response": "",
+        "headerDetailsJSON": {
+            "selected": [],
+            "items": [
+                {
+                    "key": "",
+                    "value": "",
+                    "@metadata": {
+                        "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603803754",
+                        "dirty": false,
+                        "invalid": false,
+                        "shared": false,
+                        "rootVersionContextID": "2064.c7afd14e-a3a2-4e46-85f7-975f24dbcacd",
+                        "className": "HeaderDetails",
+                        "contentObject": false
+                    }
+                }
+            ],
+            "@metadata": {
+                "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603803751",
+                "dirty": false,
+                "invalid": false,
+                "shared": false,
+                "contentObject": false
+            }
+        },
+        "userId": "",
+        "errorBO": "",
+        "businessFunction": "",
+        "startTime": "",
+        "endTime": "",
+        "@metadata": {
+            "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603803749",
+            "dirty": false,
+            "invalid": false,
+            "shared": false,
+            "rootVersionContextID": "2064.c7afd14e-a3a2-4e46-85f7-975f24dbcacd",
+            "className": "LoggerBO",
+            "contentObject": false
+        }
+    },
+    "businessFunction": "Customer Onboarding",
+    "location": "Customer Onboarding Log Exit",
+    "rqUID": "",
+    "startCustomerOnboardingRq": {
+        "headerDetails": {"requestTimeStamp": "2024-02-07",
+            "correlationId": "d82dd24a-c039-45a8-9520-35689f5068f5",
+            "channelId": "SALESFORCE STAFF-ASSISTED",
+            "@metadata": {
+                "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603791975",
+                "dirty": false,
+                "invalid": false,
+                "shared": false,
+                "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                "className": "HeaderDetailsRq",
+                "contentObject": false
+            }
+        },
+        "user": {
+            "userId": "A234399",
+            "@metadata": {
+                "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603791978",
+                "dirty": false,
+                "invalid": false,
+                "shared": false,
+                "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                "className": "User",
+                "contentObject": false
+            }
+        },
+        "businessDetails": {
+            "type": "PRIVATE COMPANY",
+            "turnover": "1000000",
+            "registrationNumber": "2006/019331/07",
+            "name": "PRIME RESOURCES PROPERTY",
+            "emailAddress": "",
+            "cellphoneNumber": "",
+            "registrationDate": "2006-06-21",
+            "bpid": "0536065752",
+            "bpguid": "11910960-dbc0-1eef-93e3-648328047134",
+            "status": "IN BUSINESS",
+            "entityClassification": null,
+            "nature": "999",
+            "startDate": "2006-06-21",
+            "preferredBranch": "0016433",
+            "industryClassification": "01222",
+            "finYearEnd": "12",
+            "finEffectiveDate": "2024-12-31",
+            "beeCode": null,
+            "physicalAddress": {
+                "addressLine1": "168 OUKLIPWEG",
+                "addressLine2": "HELDERKRUIN",
+                "addressLine3": " ",
+                "addressLine4": " ",
+                "postalCode": "1733",
+                "countryCode": "   ",
+                "city": "",
+                "countyDistrict": "",
+                "province": "",
+                "@metadata": {
+                    "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603795632",
+                    "dirty": false,
+                    "invalid": false,
+                    "shared": false,
+                    "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                    "className": "Address",
+                    "contentObject": false
+                }
+            },
+            "postalAddress": {
+                "addressLine1": "168 OUKLIPWEG",
+                "addressLine2": "HELDERKRUIN",
+                "addressLine3": " ",
+                "addressLine4": " ",
+                "postalCode": "1733",
+                "countryCode": "   ",
+                "city": "",
+                "countyDistrict": "",
+                "province": "",
+                "@metadata": {
+                    "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603795684",
+                    "dirty": false,
+                    "invalid": false,
+                    "shared": false,
+                    "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                    "className": "Address",
+                    "contentObject": false
+                }
+            },
+            "sourceOfFunds": {
+                "selected": [],
+                "items": [
+                    {
+                        "sourceFundType": "0026",
+                        "sourceFundAmount": "1000000.0",
+                        "currency": "ZAR",
+                        "@metadata": {
+                            "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603800488",
+"dirty": false,
+                            "invalid": false,
+                            "shared": false,
+                            "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                            "className": "SourceOfFunds",
+                            "contentObject": false
+                        }
+                    }
+                ],
+                "@metadata": {
+                    "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603800483",
+                    "dirty": false,
+                    "invalid": false,
+                    "shared": false,
+                    "contentObject": false
+                }
+            },
+            "taxDetails": {
+                "selected": [],
+                "items": [
+                    {
+                        "taxType": "",
+                        "taxNumber": "",
+                        "taxCountry": "",
+                        "provisionalTaxPayerInd": "",
+                        "@metadata": {
+                            "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603800509",
+                            "dirty": false,
+                            "invalid": false,
+                            "shared": false,
+                            "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                            "className": "TaxDetails",
+                            "contentObject": false
+                        }
+                    }
+                ],
+                "@metadata": {
+                    "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603800504",
+                    "dirty": false,
+                    "invalid": false,
+                    "shared": false,
+                    "contentObject": false
+                }
+            },
+            "@metadata": {
+                "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603791977",
+                "dirty": false,
+                "invalid": false,
+                "shared": false,
+                "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                "className": "BusinessDetails",
+                "contentObject": false
+            }
+        },
+        "applicationDetails": {
+            "applicationId": "a6hFg000000GKZ3IAO",
+            "@metadata": {
+                "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603791976",
+                "dirty": false,
+                "invalid": false,
+                "shared": false,
+                "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+                "className": "ApplicationDetails",
+                "contentObject": false
+            }
+        },
+        "@metadata": {
+            "objectID": "17cf8120-6c02-41ca-a4e1-178d3bce8d55-77681-1722603791974",
+            "dirty": false,
+            "invalid": false,
+            "shared": false,
+            "rootVersionContextID": "2064.446cc3d1-62de-4bcb-97e0-c59c51fd6e0b",
+            "className": "StartCustomerOnboardingRq",
+            "contentObject": false
+        }
+    }
+}

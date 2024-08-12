@@ -33,7 +33,7 @@
     <bpmn:endEvent id="Event_0yrit21">
       <bpmn:extensionElements />
       <bpmn:incoming>Flow_148om1u</bpmn:incoming>
-      <bpmn:signalEventDefinition id="SignalEventDefinition_1py1g4f" signalRef="Signal_2mka0kn">
+      <bpmn:signalEventDefinition id="SignalEventDefinition_1py1g4f" signalRef="Signal_2idhtih">
         <bpmn:extensionElements>
           <camunda:in variables="all" />
         </bpmn:extensionElements>

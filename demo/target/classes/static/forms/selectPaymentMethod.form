@@ -1,0 +1,41 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "1234******7890",
+          "value": "1234******7890"
+        },
+        {
+          "label": "PayPal",
+          "value": "PayPal"
+        },
+        {
+          "label": "Add New Card",
+          "value": "New"
+        }
+      ],
+      "label": "Choose Payment Method",
+      "type": "select",
+      "layout": {
+        "row": "Row_0bbl64x",
+        "columns": null
+      },
+      "id": "Field_0jcs2y4",
+      "key": "card",
+      "description": "Choose Card to Pay With",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "selectPaymentMethod",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.25.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}
