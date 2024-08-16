@@ -20,6 +20,7 @@ public class CbzApplication {
 	static ObjectMapper objectMapper = new ObjectMapper();
 	public static void main(String[] args) {
 		SpringApplication.run(CbzApplication.class, args);
+		oK();
 	}
 
 	public static void writeValue() throws JsonProcessingException{
@@ -27,7 +28,6 @@ public class CbzApplication {
 		try {
 			objectMapper.writeValue(new File("src/main/resources/jsons/BankAccount.json"), bankAccount);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -60,6 +60,7 @@ public class CbzApplication {
 
 		 try {
 			String jsonString = new String(Files.readAllBytes(Paths.get(filePath)));
+			System.out.println("JSON Read from File: " + jsonString);
 			User user = objectMapper.readValue(jsonString, User.class);
 			objectMapper.writeValue(new File("src/main/resources/jsons/User.json"), user);
 			System.out.println(user);
